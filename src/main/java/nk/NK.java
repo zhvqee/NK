@@ -22,6 +22,13 @@ public class NK {
 
     }
 
+    public static Node getExist(Node head, int value) {
+        Node p = head;
+        while (p.value != value) {
+            p = p.next;
+        }
+        return p;
+    }
 
     public static Node cpy(Node node) {
         if (node == null) {
